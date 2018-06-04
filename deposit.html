@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Social Profit - My Account</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="includes/style.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="includes/main.js"></script>
+</head>
+<body id="wrapper">
+    <header>
+        <a id="logo" href="index.html"></a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="index.html"><b>Social Profit</b></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>  
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">My Account<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                </ul>
+                <!--form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form-->
+            </div>
+        </nav>
+        </header>
+        <section class="myAccountBody">
+                <!--h6 id="accountDate">Update: </h6-->
+                <section class="breadcrumbAccount">
+                    <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                              <li class="breadcrumb-item"><a href="#">My Account</a></li>
+                              <li class="breadcrumb-item active" aria-current="page">Deposit</li>
+                            </ol>
+                    </nav>
+                </section>
+
+                <section class="mainDeposit">
+                    <form class="depositContainer">
+                        <button type="radio" class="channelDeposit">
+                            <h6>Leumi</h6>
+                            <img class="account-img" src="images/leumi.png">
+                        </button>
+                        <button type="radio" class="channelDeposit">
+                            <h6>HaPoalim</h6>
+                            <img class="account-img" src="images/poalim.png">
+                        </button>
+                        <button type="radio" class="channelDeposit">
+                            <h6>Mizrahi</h6>
+                            <img class="account-img" src="images/tefahot.png">
+                        </button>
+                    </form>
+                    
+                    <section class="depositArea">
+                            <h3 class="accountTitles">Deposit Money</h3>
+                            <input id="moneyToDeposit" type="number" placeholder="Enter amount" min="1" max="1000000">
+                            <img id="papalLogo" src="images/paiement-paypal.jpg">
+                            <button type="submit" id="buttonDeposit"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+
+                    </section>
+
+                    <section class="depositPurpose">
+                            <h6>Choose Your Purpose</h6>
+                            <hr>
+
+                            <form>
+                                    <button type="radio" class="purposeDeposit">
+                                        <h6>Kids</h6>
+                                        <img class="purpose-img" src="images/fu.jpg">
+                                    </button>
+                                    <button type="radio" class="purposeDeposit">
+                                        <h6>Vacation</h6>
+                                        <img class="purpose-img" src="images/vc.jpg">
+                                    </button>
+                                    <button type="radio" class="purposeDeposit">
+                                        <h6>Tuition</h6>
+                                        <img class="purpose-img" src="images/tt.jpg">
+                                    </button>
+                                    <button type="radio" class="purposeDeposit">
+                                            <h6>Car</h6>
+                                            <img class="purpose-img" src="images/18792191.jpeg">
+                                    </button>
+                            </form>
+                    </section>
+                    
+                </section>
+                
+        </section> 
+     
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+</body>
+</html>

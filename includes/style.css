@@ -1,0 +1,518 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+
+}
+header,div,aside,section,main,footer,article,nav {
+    display: block;
+}
+a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+a:visited{
+    color:#fff;
+}
+
+#wrapper{
+    flex-direction: column;
+    text-align: center;
+    max-width: 1000px;
+    margin:0px auto;
+}
+
+#logo{
+    width: 333px;
+    height: 71px;
+    background-image: url(../images/logo.jpg);
+    display: block;
+    background-size: 135px;
+    background-repeat: no-repeat;
+
+}
+
+
+.cover{
+    width: 100%;
+    background: url(../images/cover.jpg) no-repeat left center;
+    min-height: 1000px;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+/* ---------------index-----------------*/
+
+.p-index{
+    font-size: 24px;
+    text-align: center;
+}
+#title1{
+    padding-top: 20px;
+}
+
+/* ---------------FORM-----------------*/
+
+#address_box{
+    max-width: 661px;
+    margin-left: 87px;
+  }
+
+form{
+    text-align: left;
+}
+
+.slider {
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    background: #0f93b4;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 23px;
+    height: 24px;
+    border: 0;
+    background: url('contrasticon.png');
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 23px;
+    height: 24px;
+    border: 0;
+    background: url('contrasticon.png');
+    cursor: pointer;
+}
+
+/* ---------------LOGIN-----------------*/
+
+.connection{
+    float: left;
+    width: 384px;
+}
+
+
+/* ---------------Account-----------------*/
+.myAccountBody{
+    background-color: #eeeeee;
+    background-attachment: fixed;
+    position: relative;
+    height: 485px;
+}
+
+.accountDetails{
+    background-color: #ffffff;
+    height: 121px;
+    width: 630px;
+    position: absolute;
+    top: 25px;
+    left: 21px;
+}
+
+.investmentBody{
+  background-color: #ffffff;
+  height: 279px;
+  width: 630px;
+  position: absolute;
+  left: 21px;
+  top:170px;
+}
+
+.accountLogs{
+  background-color: #ffffff;
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  height: 424px;
+  width: 297px;
+}
+
+.accountTitles{
+    color:#08736c;
+    position: absolute;
+    left:10px;
+    top:15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#textMenuColor{
+    color: #000000;
+}
+
+.buttonMenu{
+    position: absolute;
+    height: 31px;
+    width: 109px;
+    top:70px;
+    left:470px;
+}
+
+#depositButton{
+    position: absolute;
+    top:69px;
+    left: 330px;
+}
+
+ .user{
+    width: 333px;
+    height: 71px;
+    display: block;
+    background-size: 135px;
+    background-repeat: no-repeat;
+
+ }
+
+ .cards{
+     float:left;
+     margin-left: 46px;
+     margin-top: 60px;
+ }
+
+ .p-account{
+     font-size: 20px;
+     margin-left:15px;
+ }
+
+ .account-img{
+    height: 30px;
+    max-width: 110px;
+    position: relative;
+    top: 10px;
+ }
+
+ .balance {
+    position: absolute;
+    top:50px;
+    left:10px;
+    font-weight: bold;
+}
+
+#amount{
+    position: absolute;
+    top:72px;
+    left:10px;
+    font-weight: bold; 
+}
+
+#TI{
+    position: absolute;
+    top:45px;
+    left:10px;
+    font-weight: bold;
+}
+
+#injuctionTI{
+    position: absolute;
+    top:65px;
+    left:10px;
+    font-weight: bold; 
+}
+
+.channelsContainer{
+    position: absolute;
+    top: 97px;
+    left: 10px;
+    
+}
+
+.channelTemplate{
+    float: left;
+    margin-right: 20px;
+    width: 150px;
+    height: 173px;
+    background-color: #eeeeee;
+}
+
+.channelTemplate h6{
+    position: relative;
+    top: 10px;
+    font-weight: bold;
+}
+
+.channelTemplate p{
+    position: relative;
+    top: 19px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.channelTemplate button{
+    position: relative;
+    top: 42px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .accountDetails {
+        background-color: #ffffff;
+        height: 121px;
+        width: 447px;
+        position: absolute;
+        top: 25px;
+        left: 21px;
+    }
+
+    .accountTitles {
+        color: #08736c;
+        float: left;
+        left: 10px;
+        top: 15px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+  
+    #depositButton {
+        position: absolute;
+        top: 69px;
+        left: 149px;
+    }
+
+    .investmentBody {
+        background-color: #ffffff;
+        height: 279px;
+        width: 448px;
+        position: absolute;
+        left: 21px;
+        top: 170px;
+    }
+
+    .channelTemplate {
+        float: left;
+        margin-right: 20px;
+        width: 126px;
+        height: 173px;
+        background-color: #eeeeee;
+    }
+
+    .accountLogs {
+        display: none;
+    }
+
+    .buttonMenu{
+        position: absolute;
+        height: 31px;
+        width: 109px;
+        top:70px;
+        left:290px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1000px)  {
+    accountLogs {
+        position: absolute;
+        top: 30px;
+    }
+}
+
+/*----------------------- Deposit ----------------*/
+
+.mainDeposit{
+    position: absolute;
+    top: 70px;
+    left: 50px;
+    height: 415px;
+    width: 900px;
+    background-color: #ffffff;
+    background-attachment: fixed;
+}
+
+.mainDeposit h6{
+    position: absolute;
+    font-weight: bold;
+    font-size: 15px;
+    color: #000000;
+}
+
+.breadcrumbAccount{
+    position: absolute;
+    left: 35px;
+    top:10px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.channelDeposit{
+    float: left;
+    margin-right: 10px;
+    width: 137px;
+    height: 100px;
+    background-color: #eeeeee;
+
+}
+
+.channelDeposit h6{
+    position: relative;
+    top: -9px;
+    font-weight: bold;
+}
+
+.channelDeposit img{
+    position: relative;
+    top:6px;
+}
+.depositContainer{
+    position: absolute;
+    top: 75px;
+    left: 160px;
+}
+
+.depositArea{
+    position: absolute;
+    top:34px;
+    right: 113px;
+    height: 164px;
+    width: 184px;
+    border: #90b3eb solid 4px;
+    border-radius: 25px;
+}
+
+.depositArea h3{
+    position: absolute;
+    left:18px;
+}
+
+#moneyToDeposit{
+    position: relative;
+    top: 52px;
+    height: 22px;
+    width: 164px;
+    text-align: center;
+}
+
+#papalLogo{
+    height: 33px;
+    max-width: 124px;
+    position: relative;
+    top: 62px;
+}
+
+#buttonDeposit{
+    background-color: #218bdd;
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border-radius: 45px;
+    top: 133px;
+    left: 65px;    
+}
+
+.depositPurpose{
+    position: absolute;
+    height: 180px;
+    width: 620px;
+    top: 219px;
+    left: 157px;
+}
+
+.depositPurpose h6{
+    position: absolute;
+    font-weight: bold;
+    font-size: 15px;
+    color: #000000;
+}
+
+.purpose-img{
+    height: 90px;
+    max-width: 132px;
+ }
+
+ .purposeDeposit{
+    float: left;
+    margin-right: 10px;
+    width: 137px;
+    height: 130px;
+    background-color: #eeeeee;
+}
+
+.purposeDeposit h6 {
+    font-weight: bold;
+    font-size: 15px;
+    color: #000000;
+    opacity: 0.5;
+    position: relative;
+    top: 3px;
+}
+
+@media only screen and (max-width: 600px) {
+    .mainDeposit {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        height: 429px;
+        width: 495px;
+        background-color: #ffffff;
+    }
+    .depositContainer {
+        position: absolute;
+        top: 7px;
+        left: 38px;
+    }
+
+    .depositPurpose {
+        position: absolute;
+        height: 180px;
+        width: 620px;
+        top: 271px;
+        left: 10px;
+    }
+
+    .purposeDeposit {
+        float: left;
+        margin-right: 10px;
+        width: 110px;
+        height: 120px;
+        background-color: #eeeeee;
+    }
+
+    .purpose-img {
+        height: 90px;
+        max-width: 106px;
+    }
+
+    .depositArea {
+        position: absolute;
+        top: 119px;
+        right: 150px;
+        height: 144px;
+        width: 184px;
+        border: #90b3eb solid 4px;
+        border-radius: 25px;
+    }
+
+    #papalLogo {
+        height: 33px;
+        max-width: 124px;
+        position: relative;
+        top: 49px;
+    }
+
+    #moneyToDeposit {
+        position: relative;
+        top: 45px;
+        height: 22px;
+        width: 164px;
+        text-align: center;
+    }
+
+    #buttonDeposit {
+        background-color: #218bdd;
+        position: absolute;
+        width: 45px;
+        height: 45px;
+        border-radius: 45px;
+        top: 108px;
+        left: 65px;
+    }
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="includes/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+    <title>Social Profit</title>
+</head>
+<body>
+    <header>
+        <a id="logo" href="index.html"></a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="index.html"><b>Social Profit</b></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>  
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="form.html"><b>Join us</b><span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Log in</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+        </header>
+        <section class="cover">
+        <div class="container">
+            <br><br>
+                <form action="http://html5-book.co.il/teach/forms/get_form2.php" method="get">  
+                    <label> Full Name</label>
+                    <input type="text" class="form-control" name="fullName" id="example-text-input">    
+                    <br><br>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1"><i class="fas fa-unlock-alt"></i> Password</label>
+                        <input name="pass" type="password" pattern=".{8,12}" required title="8 characters minimum" minlength="8" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <br> <br>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1"><i class="far fa-envelope-open"></i> Email address</label>
+                        <input type="email" name="mail" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <br>
+                    <label for="basic-url">Your website URL</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+                        </div>
+                        <input name="website" type="url" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="example-tel-input" class="col-2 col-form-label"><i class="fas fa-mobile-alt"></i> Phone to connect</label>
+                        <input class="form-control" type="tel" id="example-tel-input" required title="you forgot to fill it" name="phone" value="">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="formControlRange"><i class="fas fa-piggy-bank"></i> The amount of money you would like to deposit</label>
+                        <!-- <input type="range" name="temper" class="form-control-range" id="formControlRange" value="50" min="0" max="100">  -->
+                        <div class="slidecontainer">
+                            <input type="range" min="1" max="20000" value="50" class="slider" id="myRange">
+                            <p>Value: <span id="demo"></span></p>
+                          </div>
+
+                    </div>            
+                    <br>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1"><i class="fas fa-map-marker"></i> Address</label>
+                        <textarea id="address" name="address" class="form-control" rows="3"></textarea>
+                    </div>      
+                    <br><br
+                    <p> <strong>Goals</strong></p>
+                    <div class="form-check ">
+                        <input name="interests[]" value="vacation" type="checkbox" class="filled-in form-check-input" checked="checked">
+                        <label class="form-check-label" >family vacation</label>
+                    </div>
+                    <div class="form-check">
+                        <input name="interests[]" value="moon" type="checkbox" class="filled-in form-check-input" checked="checked">
+                        <label class="form-check-label" >honey moon</label>
+                    </div>
+                    <div class="form-check">
+                        <input name="interests[]" value=wedding type="checkbox" class="filled-in form-check-input" checked="checked">
+                        <label class="form-check-label" >wedding</label>
+                    </div>
+                    <div class="form-check">
+                        <input name="interests[]" value="house" type="checkbox" class="filled-in form-check-input" checked="checked">
+                        <label class="form-check-label" >buying house</label>
+                    </div>
+                    <div class="form-check">
+                        <input name="interests[]" value="other" type="checkbox" class="filled-in form-check-input" checked="checked">
+                        <label class="form-check-label" >other..</label>
+                    </div>
+                    <br><br>
+                    <p> <strong>Gender</strong></p>
+                    <input type="radio" name="gender" value="male" checked> Male<br>
+                    <input type="radio" name="gender" value="female"> Female<br>
+                    <br> <br>
+                    <label> age:
+                        <select name="age" id="exampleSelect1" class="form-control">
+                            <option value="22">22-29</option>
+                            <option value="23">30-35</option>
+                            <option value="24">36-42</option>
+                            <option value="25">43-50</option>
+                            <option value="26">50-60</option>
+                            <option value="27">61+</option>
+                        </select> 
+                    </label>
+                    <br><br>
+                    <div class="form-group">
+                        <label for="exampleInputFile"><i class="far fa-folder-open"></i> File input</label>
+                        <input type="file" name="face" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+                         <small id="fileHelp" class="form-text text-muted">Please upload updated ID / passport image</small>
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <br><br>
+                </form>
+            </div>
+        </section>
+    <script src="/includes/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+</body>
+</html>
