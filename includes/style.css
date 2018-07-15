@@ -1,518 +1,457 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Noto Sans', sans-serif;
-
-}
-header,div,aside,section,main,footer,article,nav {
-    display: block;
-}
-a{
-    display: block;
-    text-decoration: none;
-    color: #fff;
-}
-a:visited{
-    color:#fff;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
-#wrapper{
-    flex-direction: column;
-    text-align: center;
-    max-width: 1000px;
-    margin:0px auto;
+header,
+div,
+aside,
+section,
+main,
+footer,
+article,
+nav {
+  display: block;
 }
 
-#logo{
-    width: 333px;
-    height: 71px;
-    background-image: url(../images/logo.jpg);
-    display: block;
-    background-size: 135px;
-    background-repeat: no-repeat;
-
+header {
+  background-color: #fff;
 }
 
+li {
+  list-style-type: none;
+}
 
-.cover{
-    width: 100%;
-    background: url(../images/cover.jpg) no-repeat left center;
-    min-height: 1000px;
-    background-attachment: fixed;
-    text-align: center;
+a {
+  display: block;
+  text-decoration: none !important;
+  color: #ffffff !important;
+}
+
+a:visited {
+  color: #fff;
+}
+
+#wrapper {
+  flex-direction: column;
+  text-align: center;
+  max-width: 1000px;
+  margin: 0px auto;
+}
+
+#logo {
+  width: 333px;
+  height: 71px;
+  background-image: url(../images/logo.jpg);
+  display: block;
+  background-size: 135px;
+  background-repeat: no-repeat;
+}
+
+.cover {
+  width: 100%;
+  background: url(../images/cover.jpg) no-repeat left center;
+  min-height: 605px;
+  background-attachment: fixed;
+  text-align: center;
 }
 
 /* ---------------index-----------------*/
 
-.p-index{
-    font-size: 24px;
-    text-align: center;
+.p-index {
+  font-size: 24px;
+  text-align: center;
 }
-#title1{
-    padding-top: 20px;
+
+#title1 {
+  padding-top: 20px;
+}
+
+.jumbotron {
+  text-align: center;
+  color: #ffffffff;
+  height: 250px;
+  margin-bottom: 20px;
+}
+
+.jumboAccount {
+  background-image: url("../images/account_img.jpg") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron_index {
+  background-color: #a8cfe9;
+}
+
+div img {
+  height: 200px !important;
+  vertical-align: middle;
+  border-style: none;
 }
 
 /* ---------------FORM-----------------*/
 
-#address_box{
-    max-width: 661px;
-    margin-left: 87px;
-  }
-
-form{
-    text-align: left;
+#address_box {
+  max-width: 661px;
+  margin-left: 87px;
 }
 
-.slider {
-    width: 100%;
-    height: 10px;
-    border-radius: 5px;
-    background: #0f93b4;
-    outline: none;
-    opacity: 0.7;
-    transition: opacity .2s;
+.registretion {
+  text-align: left;
+  background-color: rgba(190, 228, 234, 0.92);
+  padding: 20px;
+  color: #000;
+  border-radius: 10px;
+  margin-top: 20px;
 }
 
-.slider:hover {
-    opacity: 1;
+.form_cover {
+  background-image: url(../images/pig.jpg);
 }
 
-.slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 23px;
-    height: 24px;
-    border: 0;
-    background: url('contrasticon.png');
-    cursor: pointer;
+.row {
+  margin-left: 0;
+  margin-right: 0;
 }
 
-.slider::-moz-range-thumb {
-    width: 23px;
-    height: 24px;
-    border: 0;
-    background: url('contrasticon.png');
-    cursor: pointer;
+/* ---------------LOGIN user-----------------*/
+
+.connection {
+  float: left;
+  width: 100%;
 }
-
-/* ---------------LOGIN-----------------*/
-
-.connection{
-    float: left;
-    width: 384px;
-}
-
 
 /* ---------------Account-----------------*/
-.myAccountBody{
-    background-color: #eeeeee;
-    background-attachment: fixed;
-    position: relative;
-    height: 485px;
+
+.account_cover {
+  background-image: url(/images/account_img.jpg) !important;
 }
 
-.accountDetails{
-    background-color: #ffffff;
-    height: 121px;
-    width: 630px;
-    position: absolute;
-    top: 25px;
-    left: 21px;
+.myAccountBody {
+  position: relative;
+  height: 485px;
 }
 
-.investmentBody{
-  background-color: #ffffff;
-  height: 279px;
-  width: 630px;
-  position: absolute;
-  left: 21px;
-  top:170px;
+.myyAcountBody {
+  background-color: #8bcada;
+  height: 485px;
 }
 
-.accountLogs{
-  background-color: #ffffff;
-  position: absolute;
-  right: 20px;
-  top: 25px;
-  height: 424px;
-  width: 297px;
+.accountDetails {
+  background-color: #8bcada;
 }
 
-.accountTitles{
-    color:#08736c;
-    position: absolute;
-    left:10px;
-    top:15px;
-    font-size: 20px;
-    font-weight: bold;
+.investmentBody {
+  background-color: #8bcada;
+  margin-right: 15px;
 }
 
-#textMenuColor{
-    color: #000000;
+.accountLogs {
+  background-color: #8bcada;
 }
 
-.buttonMenu{
-    position: absolute;
-    height: 31px;
-    width: 109px;
-    top:70px;
-    left:470px;
+.accountTitles {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
 }
 
-#depositButton{
-    position: absolute;
-    top:69px;
-    left: 330px;
+#textMenuColor {
+  color: #000000;
 }
 
- .user{
-    width: 333px;
-    height: 71px;
-    display: block;
-    background-size: 135px;
-    background-repeat: no-repeat;
-
- }
-
- .cards{
-     float:left;
-     margin-left: 46px;
-     margin-top: 60px;
- }
-
- .p-account{
-     font-size: 20px;
-     margin-left:15px;
- }
-
- .account-img{
-    height: 30px;
-    max-width: 110px;
-    position: relative;
-    top: 10px;
- }
-
- .balance {
-    position: absolute;
-    top:50px;
-    left:10px;
-    font-weight: bold;
+.user {
+  width: 333px;
+  height: 71px;
+  display: block;
+  background-size: 135px;
+  background-repeat: no-repeat;
 }
 
-#amount{
-    position: absolute;
-    top:72px;
-    left:10px;
-    font-weight: bold; 
+.cards {
+  margin: 10px;
 }
 
-#TI{
-    position: absolute;
-    top:45px;
-    left:10px;
-    font-weight: bold;
+.p-account {
+  font-size: 20px;
+  margin-left: 15px;
 }
 
-#injuctionTI{
-    position: absolute;
-    top:65px;
-    left:10px;
-    font-weight: bold; 
+.account-img {
+  height: 30px;
+  max-width: 110px;
+  position: relative;
+  top: 10px;
 }
 
-.channelsContainer{
-    position: absolute;
-    top: 97px;
-    left: 10px;
-    
+.balance {
+  font-weight: bold;
 }
 
-.channelTemplate{
-    float: left;
-    margin-right: 20px;
-    width: 150px;
-    height: 173px;
-    background-color: #eeeeee;
+#amount {
+  font-weight: bold;
 }
 
-.channelTemplate h6{
-    position: relative;
-    top: 10px;
-    font-weight: bold;
+#TI {
+  font-weight: bold;
 }
 
-.channelTemplate p{
-    position: relative;
-    top: 19px;
-    font-weight: bold;
-    font-size: 13px;
+#injuctionTI {
+  font-weight: bold;
 }
 
-.channelTemplate button{
-    position: relative;
-    top: 42px;
+.channelTemplate {
+  margin-right: 15px;
+  margin-bottom: 10px;
+  width: 150px;
+  background-color: #eeeeee;
 }
 
-@media only screen and (max-width: 600px) {
-
-    .accountDetails {
-        background-color: #ffffff;
-        height: 121px;
-        width: 447px;
-        position: absolute;
-        top: 25px;
-        left: 21px;
-    }
-
-    .accountTitles {
-        color: #08736c;
-        float: left;
-        left: 10px;
-        top: 15px;
-        font-size: 20px;
-        font-weight: bold;
-    }
-  
-    #depositButton {
-        position: absolute;
-        top: 69px;
-        left: 149px;
-    }
-
-    .investmentBody {
-        background-color: #ffffff;
-        height: 279px;
-        width: 448px;
-        position: absolute;
-        left: 21px;
-        top: 170px;
-    }
-
-    .channelTemplate {
-        float: left;
-        margin-right: 20px;
-        width: 126px;
-        height: 173px;
-        background-color: #eeeeee;
-    }
-
-    .accountLogs {
-        display: none;
-    }
-
-    .buttonMenu{
-        position: absolute;
-        height: 31px;
-        width: 109px;
-        top:70px;
-        left:290px;
-    }
+.channelTemplate h6 {
+  position: relative;
+  top: 10px;
+  font-weight: bold;
 }
 
-@media only screen and (min-width: 600px) and (max-width: 1000px)  {
-    accountLogs {
-        position: absolute;
-        top: 30px;
-    }
+.channelTemplate p {
+  position: relative;
+  top: 19px;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.channelTemplate button {
+  position: relative;
+  top: 42px;
 }
 
 /*----------------------- Deposit ----------------*/
 
-.mainDeposit{
+.mainDeposit {
+  position: absolute;
+  top: 70px;
+  left: 50px;
+  height: 415px;
+  width: 900px;
+  background-color: #1a523b50;
+  background-attachment: fixed;
+  padding: 50px;
+  border-radius: 30px;
+}
+
+.mainDeposit h6 {
+  position: absolute;
+  font-weight: bold;
+  font-size: 15px;
+  color: #000000;
+}
+
+.breadcrumbAccount {
+  position: absolute;
+  left: 35px;
+  top: 10px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.channelDeposit {
+  float: left;
+  margin-right: 10px;
+  width: 137px;
+  height: 100px;
+  background-color: #eeeeee;
+}
+
+.channelDeposit h6 {
+  position: relative;
+  top: -9px;
+  font-weight: bold;
+}
+
+.channelDeposit img {
+  position: relative;
+  top: 6px;
+}
+
+.depositContainer {
+  position: absolute;
+  top: 75px;
+  left: 160px;
+}
+
+.depositArea {
+  position: absolute;
+  top: 34px;
+  right: 113px;
+  height: 164px;
+  width: 184px;
+  border: #90b3eb solid 4px;
+  border-radius: 25px;
+}
+
+.depositArea h3 {
+  position: absolute;
+  left: 18px;
+}
+
+#moneyToDeposit {
+  position: relative;
+  top: 52px;
+  height: 22px;
+  width: 164px;
+  text-align: center;
+}
+
+#papalLogo {
+  height: 33px;
+  max-width: 124px;
+  position: relative;
+  top: 62px;
+}
+
+#buttonDeposit {
+  background-color: #218bdd;
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  border-radius: 45px;
+  top: 133px;
+  left: 65px;
+}
+
+.depositPurpose {
+  position: absolute;
+  height: 180px;
+  width: 620px;
+  top: 219px;
+  left: 157px;
+}
+
+.depositPurpose h6 {
+  position: absolute;
+  font-weight: bold;
+  font-size: 15px;
+  color: #000000;
+}
+
+.purpose-img {
+  height: 90px;
+  max-width: 132px;
+}
+
+.purposeDeposit {
+  float: left;
+  margin-right: 10px;
+  width: 137px;
+  height: 130px;
+  background-color: #eeeeee;
+}
+
+.purposeDeposit h6 {
+  font-weight: bold;
+  font-size: 15px;
+  color: #000000;
+  opacity: 0.5;
+  position: relative;
+  top: 3px;
+}
+
+@media only screen and (max-width: 600px) {
+  .mainDeposit {
     position: absolute;
-    top: 70px;
+    top: 50px;
     left: 50px;
-    height: 415px;
-    width: 900px;
+    height: 429px;
+    width: 495px;
     background-color: #ffffff;
-    background-attachment: fixed;
-}
-
-.mainDeposit h6{
+  }
+  .depositContainer {
     position: absolute;
-    font-weight: bold;
-    font-size: 15px;
-    color: #000000;
-}
-
-.breadcrumbAccount{
+    top: 7px;
+    left: 38px;
+  }
+  .depositPurpose {
     position: absolute;
-    left: 35px;
-    top:10px;
-    font-weight: bold;
-    color: #000000;
-}
-
-.channelDeposit{
+    height: 180px;
+    width: 620px;
+    top: 271px;
+    left: 10px;
+  }
+  .purposeDeposit {
     float: left;
     margin-right: 10px;
-    width: 137px;
-    height: 100px;
+    width: 110px;
+    height: 120px;
     background-color: #eeeeee;
-
-}
-
-.channelDeposit h6{
-    position: relative;
-    top: -9px;
-    font-weight: bold;
-}
-
-.channelDeposit img{
-    position: relative;
-    top:6px;
-}
-.depositContainer{
+  }
+  .purpose-img {
+    height: 90px;
+    max-width: 106px;
+  }
+  .depositArea {
     position: absolute;
-    top: 75px;
-    left: 160px;
-}
-
-.depositArea{
-    position: absolute;
-    top:34px;
-    right: 113px;
-    height: 164px;
+    top: 119px;
+    right: 150px;
+    height: 144px;
     width: 184px;
     border: #90b3eb solid 4px;
     border-radius: 25px;
-}
-
-.depositArea h3{
-    position: absolute;
-    left:18px;
-}
-
-#moneyToDeposit{
-    position: relative;
-    top: 52px;
-    height: 22px;
-    width: 164px;
-    text-align: center;
-}
-
-#papalLogo{
+  }
+  #papalLogo {
     height: 33px;
     max-width: 124px;
     position: relative;
-    top: 62px;
-}
-
-#buttonDeposit{
+    top: 49px;
+  }
+  #moneyToDeposit {
+    position: relative;
+    top: 45px;
+    height: 22px;
+    width: 164px;
+    text-align: center;
+  }
+  #buttonDeposit {
     background-color: #218bdd;
     position: absolute;
     width: 45px;
     height: 45px;
     border-radius: 45px;
-    top: 133px;
-    left: 65px;    
+    top: 108px;
+    left: 65px;
+  }
 }
 
-.depositPurpose{
-    position: absolute;
-    height: 180px;
-    width: 620px;
-    top: 219px;
-    left: 157px;
+/************ A D M I N *********************/
+
+.jumboAdmin {
+  background-image: url("../images/Database.png") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.depositPurpose h6{
-    position: absolute;
-    font-weight: bold;
-    font-size: 15px;
-    color: #000000;
+#db_h3 {
+  color: #1b0a16;
+  margin-left: 50px;
 }
 
-.purpose-img{
-    height: 90px;
-    max-width: 132px;
- }
-
- .purposeDeposit{
-    float: left;
-    margin-right: 10px;
-    width: 137px;
-    height: 130px;
-    background-color: #eeeeee;
+.bodyAdmin {
+  background-color: #c5bdbd;
 }
 
-.purposeDeposit h6 {
-    font-weight: bold;
-    font-size: 15px;
-    color: #000000;
-    opacity: 0.5;
-    position: relative;
-    top: 3px;
+/********************B A N K ***************/
+
+.body_bank {
+  background-image: url(../images/bankImg.jpg);
+  color: #000;
 }
 
-@media only screen and (max-width: 600px) {
-    .mainDeposit {
-        position: absolute;
-        top: 50px;
-        left: 50px;
-        height: 429px;
-        width: 495px;
-        background-color: #ffffff;
-    }
-    .depositContainer {
-        position: absolute;
-        top: 7px;
-        left: 38px;
-    }
-
-    .depositPurpose {
-        position: absolute;
-        height: 180px;
-        width: 620px;
-        top: 271px;
-        left: 10px;
-    }
-
-    .purposeDeposit {
-        float: left;
-        margin-right: 10px;
-        width: 110px;
-        height: 120px;
-        background-color: #eeeeee;
-    }
-
-    .purpose-img {
-        height: 90px;
-        max-width: 106px;
-    }
-
-    .depositArea {
-        position: absolute;
-        top: 119px;
-        right: 150px;
-        height: 144px;
-        width: 184px;
-        border: #90b3eb solid 4px;
-        border-radius: 25px;
-    }
-
-    #papalLogo {
-        height: 33px;
-        max-width: 124px;
-        position: relative;
-        top: 49px;
-    }
-
-    #moneyToDeposit {
-        position: relative;
-        top: 45px;
-        height: 22px;
-        width: 164px;
-        text-align: center;
-    }
-
-    #buttonDeposit {
-        background-color: #218bdd;
-        position: absolute;
-        width: 45px;
-        height: 45px;
-        border-radius: 45px;
-        top: 108px;
-        left: 65px;
-    }
+.jumboBank {
+  padding-top: 30px;
+  background-color: #fffafc;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.3;
+  color: #000;
 }

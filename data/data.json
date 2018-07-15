@@ -1,0 +1,23 @@
+[{
+        "name": "POALIM",
+        "id": "123",
+        "image": "images/poalim.jpg",
+        "interest": 3,
+        "subscribers": 200
+    },
+    {
+        "name": "TEFAHOT",
+        "id": "234",
+        "image": "images/Tefahot.jpg",
+        "interest": 2.7,
+        "subscribers": 220
+    },
+    {
+        "name": "LEUMI",
+        "id": "345",
+        "image": "images/leumi.png",
+        "interest": 3.1,
+        "subscribers": 205
+    }
+
+]
